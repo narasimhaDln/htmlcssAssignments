@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .outer-box {
+        width: 1000px;
+        height: auto; /* Allow height to adjust based on content */
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        background-color: lightcyan;
+      }
+
+      .inner-box {
+        width: 500px;
+        height: auto;
+        border: 2px solid white;
+        background-color: white;
+        display: flex;
+        flex-direction: column; /* Stack contents vertically */
+        padding: 20px; /* Add padding for inner box */
+      }
+
+      h2 {
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+
+      label {
+        margin-top: 10px; /* Space above labels */
+      }
+
+      select,
+      textarea,
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="url"] {
+        width: 100%; /* Set all input fields to full width */
+        margin-top: 5px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Include padding and border in width */
+      }
+
+      input[type="radio"] {
+        margin-right: 10px; /* Space between radio button and label */
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        align-self: center; /* Center the button */
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <h1><b>Feedback Form</b></h1>
+      <div class="inner-box">
+        <form>
+          <label for="feedback-type"><b>Feedback Type:</b></label>
+          <select id="feedback-type">
+            <option value="complaint">Complaint</option>
+            <option value="all-good">All Good</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message"><b>Message:</b></label>
+          <textarea
+            id="message"
+            placeholder="Enter your message here..."
+            rows="4"
+            maxlength="200"
+          ></textarea>
+
+          <label><b>Website Rating:</b></label
+          ><br />
+          <label>
+            <input type="radio" name="rating" value="Excellent" />
+            <b>Excellent</b>
+          </label>
+          <label>
+            <input type="radio" name="rating" value="Good" />
+            <b>Good</b>
+          </label>
+          <label>
+            <input type="radio" name="rating" value="Average" />
+            <b>Average</b>
+          </label>
+          <label>
+            <input type="radio" name="rating" value="Poor" />
+            <b>Poor</b>
+          </label>
+          <br />
+
+          <label><b>Age (10-100):</b></label>
+          <input type="text" placeholder="Enter your age" />
+
+          <label><b>Email:</b></label>
+          <input type="email" placeholder="Enter your email" />
+
+          <label><b>Password (min. 8 characters):</b></label>
+          <input type="password" placeholder="Enter your password" />
+
+          <label><b>Website URL (optional):</b></label>
+          <input type="url" placeholder="Enter your website URL" />
+
+          <label>
+            <input type="checkbox" />
+            <b>I agree to the terms and conditions</b> </label
+          ><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- Inner Box -->
+    </div>
+    <!-- Outer Box -->
+  </body>
+</html>

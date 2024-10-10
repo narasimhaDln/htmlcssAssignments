@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+      }
+
+      tr {
+        padding: 8px;
+      }
+
+      th {
+        background-color: green;
+        padding: 7px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr style="text-align: left">
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price per Unit</th>
+        <th>Description</th>
+        <th>Total Price</th>
+      </tr>
+      <tr style="text-align: left">
+        <td>Product 1</td>
+        <td>2</td>
+        <td>$10</td>
+        <td>This is product 1</td>
+        <td>$20</td>
+      </tr>
+      <tr style="text-align: left">
+        <td>Product 2</td>
+        <td>3</td>
+        <td>$20</td>
+        <td>This is product 2</td>
+        <td>$60</td>
+      </tr>
+      <tr style="background-color: lightgrey">
+        <td colspan="4">Sum</td>
+        <td>$80</td>
+      </tr>
+    </table>
+  </body>
+</html>
