@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px; /* Adds padding for better spacing */
+        text-align: left; /* Aligns text to the left */
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Very light border for all */
+      }
+
+      th {
+        background-color: #f2f2f2; /* Light gray background for headers */
+      }
+
+      .highlight {
+        background-color: yellow; /* Highlight row for sum */
+      }
+
+      .total {
+        font-weight: bold; /* Bold text for total */
+      }
+
+      .font {
+        font-size: 30px; /* Larger font size */
+        font-style: italic; /* Italic style */
+      }
+
+      .product5 {
+        font-size: 30px;
+        font-style: italic;
+      }
+
+      .product9 {
+        font-size: 30px;
+        font-style: italic;
+        color: green;
+      }
+
+      /* Light borders for Products 6 to 8 */
+      tr:nth-child(7),
+      tr:nth-child(8),
+      tr:nth-child(9) {
+        border: 1px solid lightgray; /* Light border */
+      }
+
+      tr:nth-child(7) td,
+      tr:nth-child(8) td,
+      tr:nth-child(9) td {
+        border: 1px solid lightgray; /* Apply light border to cells */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <h1 style="font-style: italic"><b>Product Name</b></h1>
+          </th>
+          <th>
+            <h1 style="font-style: italic"><b>Quantity</b></h1>
+          </th>
+          <th>
+            <h1 style="font-style: italic"><b>Price</b></h1>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="font">
+          <td>Product 1</td>
+          <td>1</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>2</td>
+          <td>20</td>
+        </tr>
+        <tr style="color: green">
+          <td>Product 3</td>
+          <td>3</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 4</td>
+          <td>4</td>
+          <td>20</td>
+        </tr>
+        <tr class="product5">
+          <td>Product 5</td>
+          <td>5</td>
+          <td>20</td>
+        </tr>
+        <tr style="color: green">
+          <td>Product 6</td>
+          <td>6</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 7</td>
+          <td>7</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 8</td>
+          <td>8</td>
+          <td>20</td>
+        </tr>
+        <tr class="product9">
+          <td>Product 9</td>
+          <td>9</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Product 10</td>
+          <td>10</td>
+          <td>20</td>
+        </tr>
+        <tr class="highlight">
+          <td>Sum</td>
+          <td></td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
