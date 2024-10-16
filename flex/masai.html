@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      #navbar {
+        border: 2px solid black;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: white; /* Center items vertically */
+      }
+      #left {
+        width: 100px;
+        height: 100%;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+        margin-right: 200px;
+        display: flex;
+      }
+      #right {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #left > img {
+        width: 80px; 
+        height: 40px; 
+        padding-left: 50px;
+        
+      }
+      select,
+      button {
+        margin-left: 10px; 
+      }
+      #logo {
+        border: 1px solid red;
+        color: red;
+        width: 50px;
+        height:30px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="left">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MpHo_kJrDGMtEufmd20LEysdQ_8XNHhSkg&s"
+          alt="logo"
+        />
+      </div>
+      <div id="right">
+        <select>
+          <option>Courses</option>
+        </select>
+        <p>FEES & ISA</p>
+        <p>ABOUT US</p>
+        <p>HIRE FROM US</p>
+        <p>FAQ</p>
+        <p>EVENTS</p>
+        <button>Refer Learn</button>
+        <button id="logo">Login</button>
+      </div>
+    </nav>
+  </body>
+</html>
